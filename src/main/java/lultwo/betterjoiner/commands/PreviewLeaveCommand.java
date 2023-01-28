@@ -16,7 +16,7 @@ public class PreviewLeaveCommand implements CommandExecutor {
 
             if (player.hasPermission("rbj.previews")) {
                 if (command.getName().equalsIgnoreCase("previewleave")) {
-                    String LeaveText = config.getString("LeaveMessage");
+                    String LeaveText = config.getString("Leave.Message");
                     LeaveText = PlaceholderAPI.setPlaceholders(player.getPlayer(), LeaveText);
 
                     player.sendMessage(LeaveText);

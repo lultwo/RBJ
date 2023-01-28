@@ -16,7 +16,7 @@ public class PreviewJoinCommand implements CommandExecutor {
 
             if (player.hasPermission("rbj.previews")) {
                 if (command.getName().equalsIgnoreCase("previewjoin")) {
-                    String JoinText = config.getString("JoinMessage");
+                    String JoinText = config.getString("Join.Message");
                     JoinText = PlaceholderAPI.setPlaceholders(player.getPlayer(), JoinText);
 
                     player.sendMessage(JoinText);

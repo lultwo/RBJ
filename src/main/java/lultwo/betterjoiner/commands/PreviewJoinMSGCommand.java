@@ -16,7 +16,7 @@ public class PreviewJoinMSGCommand implements CommandExecutor {
 
             if (player.hasPermission("rbj.previews")) {
                 if (command.getName().equalsIgnoreCase("previewjoinmsg")) {
-                    String PRVM = config.getString("PrivateMessage");
+                    String PRVM = config.getString("Join.PrivateMessage");
                     PRVM = PlaceholderAPI.setPlaceholders(player.getPlayer(), PRVM);
 
                     player.sendMessage(PRVM);

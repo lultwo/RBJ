@@ -13,7 +13,7 @@ public class QuitListener implements Listener {
         Player player = event.getPlayer();
         FileConfig config = new FileConfig("config.yml");
 
-        String LeaveText = config.getString("LeaveMessage");
+        String LeaveText = config.getString("Leave.Message");
         LeaveText = PlaceholderAPI.setPlaceholders(event.getPlayer(), LeaveText);
         event.setQuitMessage(LeaveText.toString());
     }
