@@ -7,6 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import lultwo.betterjoiner.utils.FileConfig;
+import org.jetbrains.annotations.NotNull;
 
 public class JoinListener implements Listener {
     @EventHandler
@@ -24,7 +25,11 @@ public class JoinListener implements Listener {
         event.getPlayer().sendMessage(PRVM);
 
         if (config.getBoolean("Join.Sound") == true){
-            event.getPlayer().playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BELL, 100, 0);
+            String soundName = config.getString("Join.SoundName");
+            int soundVol = config.getInt("Join.SoundVolume");
+            int soundPitch = config.getInt("Join.SoundPitch");
+            Sound sound = Sound.valueOf(soundName);
+            event.getPlayer().playSound(player.getLocation(), sound, soundVol, soundPitch);
         }
     }
 }
