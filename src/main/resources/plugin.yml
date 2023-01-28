@@ -19,8 +19,26 @@ commands:
   uwu:
     description: Get a UwU
     aliases: []
+  previewjoin:
+    description: Test the Join Message
+    aliases:
+      - prejoin
+      - getjoinmessage
+  previewjoinmsg:
+    description: Test the Join Private Message
+    aliases:
+      - prejoinmsg
+      - getjoinmsg
+  previewleave:
+    description: Test the Leave Messgae
+    aliases:
+      - preleave
+      - getleavemessage
 
 permissions:
   rbj.reload:
     description: Get access to the bjreload Command
+    default: op
+  rbj.previews:
+    description: Get access to the Preview Commands
     default: op

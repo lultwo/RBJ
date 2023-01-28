@@ -1,18 +1,17 @@
 package lultwo.betterjoiner;
 
-import lultwo.betterjoiner.commands.UwUCommand;
+import lultwo.betterjoiner.commands.*;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import lultwo.betterjoiner.listener.QuitListener;
 import lultwo.betterjoiner.listener.JoinListener;
-import lultwo.betterjoiner.commands.ReloadCommand;
 import lultwo.betterjoiner.utils.FileConfig;
 
 public final class bj extends JavaPlugin {
     FileConfig config = new FileConfig("config.yml");
-    public static String vers = "0.7.5.2 Bronze";
+    public static String vers = "0.7.6 Bronze";
     public static String author = "lultwo";
 
     public void onEnable() {
@@ -32,7 +31,9 @@ public final class bj extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new QuitListener(), this);
         this.getCommand("rbj-rl").setExecutor(new ReloadCommand());
         this.getCommand("uwu").setExecutor(new UwUCommand());
-
+        this.getCommand("previewjoin").setExecutor(new PreviewJoinCommand());
+        this.getCommand("previewjoinmsg").setExecutor(new PreviewJoinMSGCommand());
+        this.getCommand("previewleave").setExecutor(new PreviewLeaveCommand());
 
         Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "---============================---");
         Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY.toString() + ChatColor.UNDERLINE + ChatColor.BOLD + "Rhenium BetterJoiner");

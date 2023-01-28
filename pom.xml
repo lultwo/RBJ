@@ -6,7 +6,7 @@
 
     <groupId>lultwo</groupId>
     <artifactId>betterjoiner</artifactId>
-    <version>0.7.5.2 Bronze</version>
+    <version>0.7.6 Bronze</version>
     <packaging>jar</packaging>
 
     <name>RBJ</name>
