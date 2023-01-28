@@ -1,0 +1,26 @@
+name: RBJ
+version: '${project.version}'
+main: lultwo.betterjoiner.bj
+api-version: 1.19
+prefix: RBJ
+authors: [ lultwo ]
+description: Edit the Server Join and Leave Message
+website: https://cloudleaks.de/lultwo
+depend:
+  - PlaceholderAPI
+
+commands:
+  rbj-rl:
+    description: Reload the Plugin
+    aliases:
+      - rbj-reload
+      - bjreload
+      - rbjreload
+  uwu:
+    description: Get a UwU
+    aliases: []
+
+permissions:
+  rbj.reload:
+    description: Get access to the bjreload Command
+    default: op
