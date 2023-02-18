@@ -5,7 +5,7 @@
 RBJ is a Minecraft Paper plugin that improves the player join and leave experience on your server.
 > It includes the following features:
 > - Customizable join and leave messages
->- Sound effects [Soon | Maybe next Upade]
+> - Sound effects on join
 > - and more.
 
  This plugin is created by lultwo and is **licensed** under [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1)
