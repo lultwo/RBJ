@@ -5,7 +5,7 @@ api-version: 1.19
 prefix: RBJ
 authors: [ lultwo ]
 description: Edit the Server Join and Leave Message
-website: https://cloudleaks.de/lultwo
+website: https://lultwo.xyz
 depend:
   - PlaceholderAPI
 

@@ -11,7 +11,7 @@ import lultwo.betterjoiner.utils.FileConfig;
 
 public final class bj extends JavaPlugin {
     FileConfig config = new FileConfig("config.yml");
-    public static String vers = "0.7.7 Bronze";
+    public static String vers = "0.7.8 Bronze";
     public static String author = "lultwo";
 
     public void onEnable() {
